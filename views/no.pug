@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Fill out the form
+
+  form(METHOD="POST")
+    label(for='name') List of names:
+    input#name(type='text', name='name', required)
+    label(for='name') Message:
+    input#name(type='text', name='message')
+    button(type='submit') Submit
