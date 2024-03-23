@@ -1,34 +1,277 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+*
+{
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
 }
 
-a {
-  color: #00B7FF;
+body
+{
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url('../images/background.avif');
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  background-color: #fafafa;
+  padding-bottom: 100px;
 }
 
-.box{
-  border: 1px black solid;
-  margin: 10px;
-  width: 500px;
-  padding: 10px;
+.euc
+{
+  width: 100%;
+  height: auto;
+  transform: rotate(270deg);
 }
 
-li{
-  list-style-type: none;
+.MainText
+{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  margin-top: 150px;
 }
 
-form{
+.MainText>*
+{
+  margin: 0;
+}
+
+.canYouCome{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.indexButtons{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.fakeButtons{
+  padding: 20px 50px;
+  border: solid 1px black;
+  color: black;
+}
+
+.fakeButtons:hover{
+  background-color: rgb(164, 215, 149);
+}
+
+#yes:hover{
+  cursor: pointer;
+}
+
+#no:hover{
+  color: inherit;
+  text-decoration: none;
+}
+
+.yes{
   display: flex;
   flex-direction: column;
 }
 
-.visible{
-  visibility: visible;
+form
+{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
-.invisible
+h5
 {
-  visibility:hidden;
+  font-style: italic;
+}
+
+select
+{
+  border: solid 0.9px black;
+  border-radius: 0.5rem;
+  height: 1.6rem;
+  margin: 5px 0px;
+}
+
+input
+{
+  margin-bottom: 5px;
+  border-radius: .5rem;
+  border: solid 1px grey;
+  padding-left: 6px;
+  height: 1.5rem;
+}
+
+.info
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.info>*
+{
+  margin: 5px 0px;
+}
+
+.boxholder
+{
+  display: flex;
+  justify-content: center;
+}
+
+.choice
+{
+  display: flex;
+  place-items: center;
+  padding: 20px 20px;
+  border-radius: .5rem;
+  margin: 5px;
+  background-color: rgba(199, 213, 201, 0.804);
+  border: 1px solid rgba(199, 213, 201, 0.804);
+  width: 100%;
+  justify-content: center;
+}
+
+.content
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.guide
+{
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+
+.RSVP,
+label
+{
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.RSVP
+{
+  justify-self: center;
+  margin-bottom: 0;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+.choice:active
+{
+  border: solid 1px rgb(252, 156, 156);
+  opacity: 0.9;
+}
+
+button
+{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: rgba(199, 213, 201, 0.804);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+select:focus-visible,
+input:focus-visible,
+button:focus-visible
+{
+  outline: #877c41 auto 1px;
+}
+
+.choice:hover,
+button:hover
+{
+  user-select: none;
+  opacity: .8;
+}
+
+.top
+{
+  margin-bottom: 0px;
+}
+
+.bottom
+{
+  margin-top: 0px;
+}
+
+.guests *
+{
+  margin: 0px;
+}
+
+.guests
+{
+  border: solid .5px black;
+  padding: 15px;
+  margin: 40px 0px 20px 0px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.guest
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.guest p
+{
+  margin-right: 5px;
+  inline-size: 180px;
+  overflow-wrap: break-word;
+}
+
+.guest h5
+{
+  font-size: 2rem;
+}
+
+.details
+{
+  margin-bottom: 5px;
+}
+
+.name
+{
+  font-weight: bold;
+}
+
+.Remove
+{
+  position: absolute;
+  top: 50%;
+  transform: translate(-0%, -50%);
+  right: 0%;
+}
+
+.party
+{
+  width: fit-content;
+  font-size: 2rem;
+  font-style: italic;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  overflow: visible;
 }
