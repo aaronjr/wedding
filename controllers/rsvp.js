@@ -1,5 +1,5 @@
 const Person = require("../models/Person");
-const Group = require("../models/Group");
+const Group = require("../models/group");
 const No = require("../models/No");
 
 const asyncHandler = require("express-async-handler");
