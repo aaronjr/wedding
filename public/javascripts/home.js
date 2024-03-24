@@ -5,7 +5,3 @@ const form = document.querySelector('form')
 yes.addEventListener('click', ()=>{
   form.className='visible'
 })
-
-no.addEventListener('click', ()=>{
-  form.className='invisible'
-})
