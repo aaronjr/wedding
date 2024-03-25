@@ -96,13 +96,19 @@ body
 .indexButtons{
   display: flex;
   justify-content: space-evenly;
-  gap: 25px;
+  gap: 15px;
 }
 
 .fakeButtons{
-  padding: 17px 40px;
+  padding: 17px 0px;
   border: solid 1px white;
+  border-radius: 0.5rem;
   color: white;
+  width: 140px;
+  text-align: center;
+  color: rgb(46 60 41);
+  background-color: white;
+  font-size: 1.1rem;
 }
 
 .fakeButtons:hover{
