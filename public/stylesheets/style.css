@@ -44,7 +44,7 @@ body
   align-items: center;
   flex-direction: column;
   margin: 0px;
-  margin-top: 150px;
+  margin-top: 60px;
 }
 
 .MainText>*
@@ -63,6 +63,11 @@ body
 
 .invitedBottom{
   margin-bottom: 15px;
+}
+
+.invisble{
+  display: none;
+  visibility: hidden;
 }
 
 .names{
@@ -138,8 +143,8 @@ input
   margin-bottom: 5px;
   border-radius: .5rem;
   border: solid 1px grey;
+  padding: 4px;
   padding-left: 6px;
-  height: 1.5rem;
 }
 
 .info
