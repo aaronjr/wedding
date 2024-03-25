@@ -2,11 +2,11 @@ extends layout
 
 block content
   div.canYouCome
-    h3 Will you be joining us?
+    h3 Can you join us?
 
     div.indexButtons
-      div#yes.fakeButtons(type=button) Yes
-      a#no.fakeButtons(href='/icantcome') No
+      div#yes.fakeButtons(type=button) Attending
+      a#no.fakeButtons(href='/icantcome') Can't make it
 
     form.invisible(method="POST")
       label(for='number') How many in your party?
