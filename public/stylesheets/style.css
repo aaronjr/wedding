@@ -8,6 +8,7 @@
 *{
   font-family: 'Playfair Display', serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body
@@ -26,14 +27,13 @@ body
   background-color: rgb(46 60 41);
   /*padding-bottom: 100px;*/
   color: white;
-  border: 10px solid white;
 }
 
-.euc
-{
-  width: 100%;
-  height: auto;
-  transform: rotate(270deg);
+.secondBody{
+  background-color: rgb(46 60 41);
+  border: solid 5px white;
+  align-self:center;
+  margin: 10px;
 }
 
 .MainText
@@ -57,21 +57,30 @@ body
 }
 
 .invitedTop{
-  border-top: solid 2px white;
-  padding: 30px;
+  padding-top: 20px;
+  border-top: solid white 2px;
+}
+
+.invitedBottom{
+  margin-bottom: 15px;
 }
 
 .names{
   font-size: 5rem;
   text-align: center;
   font-family: curly;
-  padding: 0px 10px;
+  line-height: 1;
+  padding: 0px 20px
 }
 .canYouCome{
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   place-items: center;
+}
+
+.canYouCome form{
+  margin-bottom: 20px;
 }
 
 .canYouCome h3{
@@ -181,8 +190,8 @@ input
 .RSVP,
 label
 {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .RSVP
@@ -297,3 +306,44 @@ button:hover
   margin-bottom: 10px;
   overflow: visible;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 480px)
+{
+  
+}
+
+@media screen and (min-width: 481px) and (max-width: 850px)
+{
+  .secondBody{
+    padding: 40px 80px;
+  }
+  .invitedTop{
+    width: 80%;
+    text-align: center;
+  }
+  .canYouCome h3{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 851px)
+{
+  .MainText{
+    margin-top: 50px;
+  }
+  .secondBody{
+        padding: 0px 80px;
+  }
+}
+
+/*
+
+For Mobile Devices – 320px — 480px. 
+iPads and Tablets – 481px — 768px. 
+Laptops and small screen – 769px — 1024px.
+
+*/
