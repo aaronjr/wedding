@@ -1,11 +1,12 @@
 extends layout
 
 block content
-  h1 Fill out the form
+  div.formPage
+    h1 Who's not coming?
 
-  form(METHOD="POST")
-    label(for='name') List of names:
-    input#name(type='text', name='name', required)
-    label(for='name') Message:
-    input#name(type='text', name='message')
-    button(type='submit') Submit
+    form.noForm(METHOD="POST")
+      label(for='name') List of names:
+      input(type='text', name='name', required)
+      label(for='name') Message for the bride and groom
+      textarea(rows="5", cols="30", name='message')
+      button(type='submit') Submit

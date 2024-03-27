@@ -30,7 +30,6 @@ body
 }
 
 .secondBody{
-  background-color: rgb(46 60 41);
   border: solid 5px white;
   align-self:center;
   margin: 10px;
@@ -124,6 +123,10 @@ body
   text-decoration: none;
 }
 
+.howMany{
+      font-size: 1.5rem;
+}
+
 .yes{
   display: flex;
   flex-direction: column;
@@ -136,17 +139,23 @@ form
   flex-direction: column;
 }
 
+.noForm button{
+  margin-top: 10px;
+}
+
 select
 {
   border: solid 0.9px black;
   border-radius: 0.5rem;
-  height: 1.6rem;
-  margin: 5px 0px;
+  padding: 6.5px;
+}
+
+#number{
+  margin-bottom: 5px;
 }
 
 input
 {
-  margin-bottom: 5px;
   border-radius: .5rem;
   border: solid 1px grey;
   padding: 4px;
@@ -167,10 +176,8 @@ input
   margin: 5px 0px;
 }
 
-.boxholder
-{
-  display: flex;
-  justify-content: center;
+.box{
+  border: solid 1px white
 }
 
 .choice
@@ -192,34 +199,6 @@ input
   flex-direction: column;
 }
 
-.guide
-{
-  margin-bottom: 0px;
-  font-weight: 400;
-}
-
-.RSVP,
-label
-{
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.RSVP
-{
-  justify-self: center;
-  margin-bottom: 0;
-  padding-left: 5px;
-  padding-top: 10px;
-}
-
-
-.choice:active
-{
-  border: solid 1px rgb(252, 156, 156);
-  opacity: 0.9;
-}
-
 button
 {
   border-radius: 8px;
@@ -235,6 +214,7 @@ button
 
 select:focus-visible,
 input:focus-visible,
+textarea:focus-visible,
 button:focus-visible
 {
   outline: #877c41 auto 1px;
@@ -257,12 +237,34 @@ button:hover
   margin-top: 0px;
 }
 
-.yesPage{
-  padding: 100px 15px;
+.formPage{
+      padding: 50px 15px;
+        border: solid 5px white;
+        margin: 20px 0px;
+        width: 90%;
+        align-self: center;
 }
 
-.yesForm{
-  
+.formPage label{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.details{
+display: flex;
+  flex-direction: column;
+  border-bottom: 2px dotted white;
+  padding-bottom: 25px;
+}
+
+.all{
+  width: 80%;
+  align-self: center;
+}
+.all ul{
+  padding: 0px;
 }
 
 
@@ -295,6 +297,9 @@ button:hover
   }
   .secondBody{
         padding: 0px 80px;
+  }
+  .formPage{
+    width: 50%;
   }
 }
 

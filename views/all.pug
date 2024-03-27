@@ -1,22 +1,23 @@
 extends layout
 
 block content
-  h1 Coming 
-  ul 
-    each person in coming
-      div.box
-        li Name: #{person.name}
-        li Diet: #{person.diet}
-        li Allergies: #{person.allergies}
+  div.all
+    h1 Coming 
+    div
+        each person in coming
+          div.box
+            p Name: #{person.name}
+            p Diet: #{person.diet}
+            p Allergies: #{person.allergies}
 
-  h1 Not coming 
-  ul
-    each person in notComing
-      div.box
-        li People: #{person.people}
-        li Message: #{person.message}
+    h1 Not coming 
+    ul
+      each person in notComing
+        div.box
+          li People: #{person.people}
+          li Message: #{person.message}
 
 
-  h1 CSV 
-     each person in coming
-        p #{person.name}, #{person.diet},#{person.allergies}
+    h1 CSV 
+      each person in coming
+          p #{person.name}, #{person.diet},#{person.allergies}

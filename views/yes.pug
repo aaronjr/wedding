@@ -1,16 +1,17 @@
 extends layout
 
 block content
-  div.yesPage
-    h1 Who's coming 
+  div.formPage
+    h1 Who's coming?
     form.yesForm(method="POST")
       - for (var n = 1; n <= number; n++)
-          label(for=`name${n}`) Name:
+        div.details
+          label(for=`name${n}`) Name
           input(type='text', name=`name${n}`, required)      
-          label(for=`diet${n}`) Diet:
+          label(for=`diet${n}`) Diet
           select(name=`diet${n}`)
             each val in ['Vegan', 'Vegetarian', 'Meat']
               option(value=val, selected='Meat')= val
-          label(for=`allergies${n}`) Allergies:
+          label(for=`allergies${n}`) Allergies
           input(type='text' name=`allergies${n}`)
       button(type='submit') Submit
