@@ -257,65 +257,12 @@ button:hover
   margin-top: 0px;
 }
 
-.guests *
-{
-  margin: 0px;
+.yesPage{
+  padding: 100px 15px;
 }
 
-.guests
-{
-  border: solid .5px black;
-  padding: 15px;
-  margin: 40px 0px 20px 0px;
-  background-color: white;
-  border-radius: 0.5rem;
-}
-
-.guest
-{
-  display: flex;
-  flex-direction: column;
-  position: relative;
-}
-
-.guest p
-{
-  margin-right: 5px;
-  inline-size: 180px;
-  overflow-wrap: break-word;
-}
-
-.guest h5
-{
-  font-size: 2rem;
-}
-
-.details
-{
-  margin-bottom: 5px;
-}
-
-.name
-{
-  font-weight: bold;
-}
-
-.Remove
-{
-  position: absolute;
-  top: 50%;
-  transform: translate(-0%, -50%);
-  right: 0%;
-}
-
-.party
-{
-  width: fit-content;
-  font-size: 2rem;
-  font-style: italic;
-  border-bottom: 1px solid black;
-  margin-bottom: 10px;
-  overflow: visible;
+.yesForm{
+  
 }
 
 

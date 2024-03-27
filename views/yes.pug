@@ -1,11 +1,10 @@
 extends layout
 
 block content
-  div
-    h1 Fill out the form
-    form(method="POST")
+  div.yesPage
+    h1 Who's coming 
+    form.yesForm(method="POST")
       - for (var n = 1; n <= number; n++)
-        div
           label(for=`name${n}`) Name:
           input(type='text', name=`name${n}`, required)      
           label(for=`diet${n}`) Diet:

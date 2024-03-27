@@ -1,16 +1,24 @@
 extends layout
 
 block content
-  div.canYouCome
-    h3 Can you join us?
+    div.MainText
+        h5.invited.invitedTop YOU ARE INVITED TO CELEBRATE
+        h5.invited.invitedBottom THE WEDDING OF 
+        h1.names Aimee Falla
+        h2 &
+        h1.names George Dovell
+        div.info
+          h5.top 12PM. UPTON BARN DEVON
+          h5.bottom 14.12.2024
 
-    div.indexButtons
-      div#yes.fakeButtons(type=button) Attending
-      a#no.fakeButtons(href='/icantcome') Can't make it
-
-    form.invisible(method="POST")
-      label(for='number') How many in your party?
-      input#number(type='number', name='number', min=1, required)
-      button(type='submit') Submit
+    div.canYouCome
+      h3 Can you join us?
+      div.indexButtons
+        div#yes.fakeButtons(type=button) Attending
+        a#no.fakeButtons(href='/icantcome') Can't make it
+      form.invisible(method="POST")
+        label(for='number') How many in your party?
+        input#number(type='number', name='number', min=1, required)
+        button(type='submit') Submit
     
-  script(type='text/javascript', src='/javascripts/home.js')
+    script(type='text/javascript', src='/javascripts/home.js')
