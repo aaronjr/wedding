@@ -132,6 +132,9 @@ body
   flex-direction: column;
 }
 
+.yesForm button{
+  margin-top: 30px;
+}
 form
 {
   margin-top: 30px;
@@ -177,7 +180,31 @@ input
 }
 
 .box{
-  border: solid 1px white
+  border: solid 1px white; 
+  margin: 15px 0px;
+}
+
+.person{
+  margin: 15px 15px;
+  border-bottom: 1px dotted white;
+}
+
+.box .person:last-child{
+  border: none;
+}
+
+.boxNot{
+  padding: 15px;
+  margin: 15px 0px;
+  border: solid 1px white;
+}
+.boxNot p:first-child{
+  margin: 0px;
+}
+
+.csv{
+  font-size: 1rem;
+  margin: 0;
 }
 
 .choice
@@ -262,11 +289,15 @@ display: flex;
 .all{
   width: 80%;
   align-self: center;
+  margin-bottom: 40px;
 }
 .all ul{
   padding: 0px;
 }
 
+.allTitle{
+  margin: 20px 0px;
+}
 
 /* MEDIA QUERIES */
 
@@ -300,6 +331,9 @@ display: flex;
   }
   .formPage{
     width: 50%;
+  }
+  .all{
+    width:40%;
   }
 }
 

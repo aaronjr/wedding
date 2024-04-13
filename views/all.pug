@@ -2,23 +2,24 @@ extends layout
 
 block content
   div.all
-    h1 Coming 
+    h1.allTitle Attending
     div
         each group in grouped
           div.box
             each person in group
-              p Name: #{person.name}
-              p Diet: #{person.diet}
-              p Allergies: #{person.allergies}
+              div.person
+                p Name: #{person.name}
+                p Diet: #{person.diet}
+                p Allergies: #{person.allergies}
 
-    h1 Not coming 
-    ul
+    h1.allTitle Not attending 
+    div
       each person in notComing
-        div.box
-          li People: #{person.people}
-          li Message: #{person.message}
+        div.boxNot
+          p People: #{person.people}
+          p Message: #{person.message}
 
 
-    h1 CSV 
-      each person in coming
-          p #{person.name}, #{person.diet},#{person.allergies}
+    h1.allTitle CSV
+    each person in coming
+          p.csv #{person.name}, #{person.diet}, #{person.allergies}
