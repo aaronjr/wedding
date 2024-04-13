@@ -35,8 +35,8 @@ exports.yes_post = asyncHandler(async (req, res, next) => {
 
 // Display cant come
 exports.no_get = asyncHandler(async (req, res, next) => {
-  //res.render("no.pug");
-  res.render("sorry.pug")
+  res.render("no.pug");
+  //res.render("sorry.pug")
 });
 
 // save cant come
