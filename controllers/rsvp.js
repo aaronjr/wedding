@@ -30,12 +30,13 @@ exports.yes_post = asyncHandler(async (req, res, next) => {
     await newPerson.save();
   }
   // redirect to thank you - happy
-  res.redirect(`/all`);
+  res.render("thanks.pug");
 });
 
 // Display cant come
 exports.no_get = asyncHandler(async (req, res, next) => {
-  res.render("no.pug");
+  //res.render("no.pug");
+  res.render("sorry.pug")
 });
 
 // save cant come
@@ -47,5 +48,5 @@ exports.no_post = asyncHandler(async (req, res, next) => {
 
   await notComing.save();
   //redirect to thank you - sad
-  res.redirect("/all");
+  res.render("sorry.pug");
 });

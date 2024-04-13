@@ -180,7 +180,7 @@ input
 }
 
 .box{
-  border: solid 1px white; 
+  border: solid 2px white; 
   margin: 15px 0px;
 }
 
@@ -299,12 +299,25 @@ display: flex;
   margin: 20px 0px;
 }
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 480px)
-{
-  
+.sorryHolder{
+  align-self: center;
+  margin: 50px;
 }
+
+.sorryHolder h1{
+  text-align: center;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 2.5rem;
+}
+
+.sorryHolder h3{
+  margin: 0;
+}
+
+/* MEDIA QUERIES */
 
 @media screen and (min-width: 481px) and (max-width: 850px)
 {
@@ -319,6 +332,10 @@ display: flex;
     width: 80%;
     text-align: center;
   }
+  .sorryHolder
+    {
+      width: 70%;
+    }
 }
 
 @media screen and (min-width: 851px)
@@ -332,9 +349,23 @@ display: flex;
   .formPage{
     width: 50%;
   }
-  .all{
-    width:40%;
+  .all
+    {
+      width: 40%;
+    }
+  .sorryHolder{
+    width: 60%;
   }
+  .sorryHolder h1{
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1100px){
+  .sorryHolder
+    {
+      width: 40%;
+    }
 }
 
 /*
