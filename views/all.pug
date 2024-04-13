@@ -4,11 +4,12 @@ block content
   div.all
     h1 Coming 
     div
-        each person in coming
+        each group in grouped
           div.box
-            p Name: #{person.name}
-            p Diet: #{person.diet}
-            p Allergies: #{person.allergies}
+            each person in group
+              p Name: #{person.name}
+              p Diet: #{person.diet}
+              p Allergies: #{person.allergies}
 
     h1 Not coming 
     ul
