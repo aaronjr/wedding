@@ -25,7 +25,8 @@ app.use(limiter);
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const mongoDB = process.env.MONGODB_URI || url;
+const mongoDB = process.env.MONGODB_URI;
+//|| url;
 
 main().catch((err) => console.log(err));
 async function main() {
