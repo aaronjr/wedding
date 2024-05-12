@@ -2,11 +2,11 @@ extends layout
 
 block content
   div.formPage
-    h1 Who's not coming?
+    h1 Sorry you can't make it!
 
     form.noForm(METHOD="POST")
-      label(for='name') List of names:
+      label(for='name') Full names of everyone in your party:
       input(type='text', name='name', required)
-      label(for='name') Message for the bride and groom
+      label(for='message') Optional message for us:
       textarea(rows="5", cols="30", name='message')
       button(type='submit') Submit
