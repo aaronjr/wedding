@@ -3,7 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-//const url = require("./password.js");
+const url = require("./password.js");
 
 var indexRouter = require("./routes/index");
 
@@ -25,8 +25,7 @@ app.use(limiter);
 const mongoose = require("mongoose");
 mongoose.set("strictQuery", false);
 
-const mongoDB = process.env.MONGODB_URI;
-//|| url;
+const mongoDB = process.env.MONGODB_URI || url;
 
 main().catch((err) => console.log(err));
 async function main() {
