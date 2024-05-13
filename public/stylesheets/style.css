@@ -97,7 +97,7 @@ body
 }
 
 .fakeButtons:hover,
-button: {
+button {
   background-color: rgb(46 61 41 / 20%);
   color: white;
   border-color: white;
